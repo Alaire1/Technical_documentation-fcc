@@ -1,0 +1,72 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+:root {
+  --titles: #7d3c98;
+}
+#navbar {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 16%;
+  height: 100%;
+  background-color: #ebdef0;
+  z-index: 1;
+}
+#nav-title {
+  font-weight: bold;
+  font-size: clamp(0.8rem, 2.5vw, 3rem);  
+  color: var(--titles);
+  text-align: center;
+}
+.nav-link {
+  font-size: 1.8em;
+  text-decoration: none;
+  color: black;
+}
+#navbar a {
+  cursor: pointer;
+}
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+ul li {
+  margin-bottom: 1.5em;
+}
+
+header {
+  font-size: 2em;
+  color: var(--titles);
+  font-weight: bold;
+}
+#main-doc {
+  position: absolute;
+  padding-left: 18%;
+}
+
+code {
+  border-left-style: solid;
+  border-color: var(--titles);
+  display: block;
+  background-color: #ebdef0;
+  padding: 1em;
+}
+
+@media only screen and (max-device-width: 800px) {
+  #navbar {
+    width: 100px;
+    height: 100%;
+  }
+
+   
+  
+  .nav-link {
+    font-size: 1em;
+  }
+  #main-doc {
+    padding-left: 30%;
+  }
+}
